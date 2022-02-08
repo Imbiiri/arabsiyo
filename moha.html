@@ -10,13 +10,13 @@
 <body>
     <div class="container">
     <nav>
-        <label class="logo"><img src="my logo.png"></label>
+        <label id="home" class="logo"><img src="my logo.png"></label>
         
         <ul id="menulist">
-            <li><a class="active" href="">home</a></li>
-            <li><a href="">about</a></li>
-            <li><a href="">gallery</a></li>
-            <li><a href="">contact</a></li>
+            <li><a  href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
         
         <img src="menu_btn.png" class="navv" onclick="togglemenu9()">
@@ -25,10 +25,10 @@
              <h3>Hello! Welcome</h3>
              <P>I like making new things and meeting<br> new peaple.</P>
              <div class="fil">
-             <button id="moh">Hire me</button><button>Download CV</button></div>
+             <button id="moh"><a href="form.html">Hire me</a> 
          </div><br><br><br>
 
-         <div class="ln2">
+         <div id="about" class="ln2">
              <h3>
                  About Me
              </h3>
@@ -41,7 +41,7 @@
            </p>
            
            <br><br><br>
-           <h3>Gallery</h3>
+           <h3 id="gallery">Gallery</h3>
         <div class="line-under-about"></div><br>
 
         <div class="images">
@@ -62,7 +62,7 @@
          <br>
          
          <br>
-        <div class="contact">
+        <div id="contact" class="contact">
             <h3>Contact Me </h3>
             <div class="line-under-about"></div>
             <div class="hoo">
