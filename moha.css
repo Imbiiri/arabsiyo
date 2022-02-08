@@ -20,7 +20,6 @@
     }
 .logo img{
     width:250px;
-    
     cursor: pointer;
     margin: 30px 0;
 }
@@ -86,6 +85,7 @@ a.active,a:hover{
         color: white;
         border: none;
         border-radius: 7px;
+        cursor: pointer;
     }
     .ln2{
         text-align: center;
@@ -151,7 +151,29 @@ a.active,a:hover{
     }
     footer p{
         text-align: center;
-    }  
+    }
+    .images img{
+        animation: slide 5s linear infinite;
+    } 
+    #moh a{
+            color: white;
+        }
+
+    #pdf a{
+            color: white;
+        }
+
+    @keyframes slide{
+       /* for{
+           width: 0%;
+           margin-left: 20%;
+       }
+       to{
+           width: 100%;
+           margin-left: -4%;
+       }
+        */
+    } 
     
     /* @keyframes typing{
         from {width: 200px}
@@ -179,51 +201,48 @@ a.active,a:hover{
         nav ul li a{display: flex;
         flex-direction: column;}
        label.logo{
-            width: 100px;
+            width: 100%;
         }
         nav ul{
-            width: 200px;
-            position: relative;
-            top: 100px;
+            width: 100%;
+            position: absolute;
+            top: 140px;
             left: 40px;
+            
 
 
         }
+
+        
         nav ul li a{
-            font-size: 14px;
-         
+           font-size: 10px;
            position: relative;
-           right: 10px;
-           color: rgb(0, 0, 0);
+           left: 12px;
+           color: white;
            font-family: sans-serif;
-           
-            
+           text-align: left;
             
         }
         ul{
            position: fixed;
-           width: 1000%;
-           height: 100px;
            transition: all .5s;
            z-index: 2;
+           display: inline;
+           
           
         }
-        nav ul{
-            
-       
-       color: white;
-       
-       z-index: 2;
-      padding-left: 20px;
-       
-       
-       }
+        
         .navv{
             display: block;
         }
         #menulist{
+            display: inline;
+            opacity: 98%;
+            border-radius: 5px;
+           width: 83%;
             overflow: hidden;
             transition: .5s;
+             background-color: rgb(62, 155, 62);
         }
         .landing {
             
@@ -237,9 +256,21 @@ a.active,a:hover{
             flex-direction: column-reverse;
             align-items:center ;
             text-align: center;
-            
             align-self: center;
+            cursor: pointer;
             
+        }
+        @keyframes scrol {
+            for{
+                width: 19px;
+            }
+            after{
+                width: 129px;
+            }
+            
+        }
+        #moh a{
+            color: white;
         }
         
         .fil{
@@ -252,9 +283,13 @@ a.active,a:hover{
         }
         .images{
             flex-direction: column;
+            
         }
         .images img{
             width: 90%;
+            border-radius: 5px;
+            animation: scrol 3.5s steps(40, end) infinite;
+        overflow: hidden; 
         }
 
         .contact{
